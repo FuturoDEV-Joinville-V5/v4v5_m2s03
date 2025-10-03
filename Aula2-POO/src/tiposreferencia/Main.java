@@ -1,6 +1,6 @@
 package tiposreferencia;
 
-import banco.Conta;
+import banco.entidades.Conta;
 
 public class Main {
   public static void main(String[] args) {

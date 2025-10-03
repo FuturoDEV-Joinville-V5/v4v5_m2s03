@@ -1,9 +1,8 @@
-package banco;
+package banco.entidades;
 
 public class Conta {
-  public String nomeTitular;
-  public String cpfTitular;
-  private double saldo;
+  private Cliente titular = new Cliente();
+  private double saldo = 5.0;
 
   public void depositar(double valorDeposito) {
     this.saldo += valorDeposito;
@@ -26,5 +25,13 @@ public class Conta {
 
   public double getSaldo() {
     return this.saldo;
+  }
+
+  public Cliente getTitular() {
+    return titular;
+  }
+
+  public void setTitular(Cliente titular) {
+    this.titular = titular;
   }
 }
