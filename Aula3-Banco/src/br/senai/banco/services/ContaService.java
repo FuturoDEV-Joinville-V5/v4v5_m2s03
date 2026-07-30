@@ -94,6 +94,9 @@ public class ContaService {
 
     System.out.println("Contas encontradas. Digite o valor da transferência:");
     double valor = Double.parseDouble(ENTRADA.nextLine());
+
+    contaOrigem.transferir(valor, contaDestino);
+
     if (contaOrigem.sacar(valor)) {
       contaDestino.depositar(valor);
       System.out.printf(
